@@ -1,0 +1,131 @@
+@import "reset";
+body {
+  font-family: Nunito, "Open Sans", sans-serif;
+  min-width: 1080px;
+  text-decoration: none;
+  background-color: rgba($color: rgb(240, 240, 240)
+  , $alpha: 1.0);
+background-image: linear-gradient(270deg, #00DBDE 0%, #FC00FF 100%);
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+}
+
+i {
+  color: rgb(117, 70, 165);
+}
+// Typography
+header {
+  color: #f0efef;
+  li{
+      font-weight: 400;
+  }
+}
+.salutation,
+.profession {
+  font-family: Nunito;
+  font-size: 1em;
+  font-weight: 700;
+  color: #2b2929;
+}
+.salutation {
+  letter-spacing: 0.05em;
+}
+
+.name {
+  font-size: 3.3em;
+  color: #2b2929;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.profession {
+  color: #2b2929;
+  font-size: 1em;
+}
+.description {
+  font-family: Nunito;
+  color: #686868;
+  font-size: 0.9em;
+}
+.contacts li {
+  font-family: Nunito;
+  color: #686868;
+  list-style: none;
+  font-size: 0.9em;
+}
+.socials li {
+  list-style: none;
+  display: inline;
+}
+// Layout
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 2em;
+  nav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    li {
+      margin: 1em;
+      list-style: none;
+    }
+  }
+}
+main section {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  margin: 5em 13em 5em;
+  padding: 1em;
+  justify-content: space-between;
+  min-width: 950px;
+  max-width: 951px;
+  min-height: fit-content;
+//   height: 80vh;
+  
+  img {
+    flex-basis: auto;
+    min-width: 500px;
+    // height: 100%;
+    padding: 0.5em;
+    // justify-self: center;
+    // padding-right: 5em;
+    // margin: 1em;
+  }
+  .text-container {
+    // padding: 1em 6em;
+    margin-right: 2em;
+    margin-top: 1.4em;
+    width: 30%;
+  }
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  .profession {
+    margin: 0.5em 0 1em;
+  }
+  .description {
+    margin-bottom: 1em;
+  }
+  .contacts li {
+    margin: 0.3em 0;
+  }
+}
+.socials {
+  font-size: 3em;
+  margin: 0 auto;
+  i {
+    color: rgba(75, 70, 80, 0.425);
+  }
+}
+
+@media screen and (max-width: 500px) {
+body *{
+    margin: 0;
+    
+}
+}

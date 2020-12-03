@@ -1,0 +1,140 @@
+body,
+body * {
+  margin: unset;
+  box-sizing: border-box;
+  padding: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+body {
+  font-family: Nunito, "Open Sans", sans-serif;
+  min-width: 1080px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(270deg, #00DBDE 0%, #FC00FF 100%);
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+}
+
+i {
+  color: #7546a5;
+}
+
+header {
+  color: #f0efef;
+}
+header li {
+  font-weight: 400;
+}
+
+.salutation,
+.profession {
+  font-family: Nunito;
+  font-size: 1em;
+  font-weight: 700;
+  color: #2b2929;
+}
+
+.salutation {
+  letter-spacing: 0.05em;
+}
+
+.name {
+  font-size: 3.3em;
+  color: #2b2929;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.profession {
+  color: #2b2929;
+  font-size: 1em;
+}
+
+.description {
+  font-family: Nunito;
+  color: #686868;
+  font-size: 0.9em;
+}
+
+.contacts li {
+  font-family: Nunito;
+  color: #686868;
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.socials li {
+  list-style: none;
+  display: inline;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+header nav ul li {
+  margin: 1em;
+  list-style: none;
+}
+
+main section {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 5em 13em 5em;
+  padding: 1em;
+  justify-content: space-between;
+  min-width: 950px;
+  max-width: 951px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+main section img {
+  flex-basis: auto;
+  min-width: 500px;
+  padding: 0.5em;
+}
+main section .text-container {
+  margin-right: 2em;
+  margin-top: 1.4em;
+  width: 30%;
+}
+main section .profession {
+  margin: 0.5em 0 1em;
+}
+main section .description {
+  margin-bottom: 1em;
+}
+main section .contacts li {
+  margin: 0.3em 0;
+}
+
+.socials {
+  font-size: 3em;
+  margin: 0 auto;
+}
+.socials i {
+  color: rgba(75, 70, 80, 0.425);
+}
+
+@media screen and (max-width: 500px) {
+  body * {
+    margin: 0;
+  }
+}
